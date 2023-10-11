@@ -1,0 +1,37 @@
+[gd_scene load_steps=5 format=3 uid="uid://ck10bdolk6vtn"]
+
+[ext_resource type="PackedScene" uid="uid://cktfurh6l63nr" path="res://scenes/lighter.tscn" id="1_oh6ho"]
+[ext_resource type="PackedScene" uid="uid://geitjjorng41" path="res://scenes/skull.tscn" id="2_w00os"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_s7n6b"]
+size = Vector3(30, 1, 30)
+
+[sub_resource type="BoxMesh" id="BoxMesh_1fxep"]
+size = Vector3(30, 1, 30)
+
+[node name="Main" type="Node"]
+
+[node name="Background" type="StaticBody3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Background"]
+shape = SubResource("BoxShape3D_s7n6b")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Background/CollisionShape3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1, 0)
+mesh = SubResource("BoxMesh_1fxep")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 11.723, 2.63735)
+light_color = Color(1, 0.454902, 0.192157, 1)
+light_energy = 4.411
+shadow_enabled = true
+omni_range = 13.0
+
+[node name="Lighter" parent="." instance=ExtResource("1_oh6ho")]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 11.723, 5)
+
+[node name="skull" parent="." instance=ExtResource("2_w00os")]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 10, -3)
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 23, 0)

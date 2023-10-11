@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://06k2f0u34blo"
+path="res://.godot/imported/arch_gate_left.obj-9b5a092e496c51f7835603e5ba876e19.mesh"
+
+[deps]
+
+files=["res://.godot/imported/arch_gate_left.obj-9b5a092e496c51f7835603e5ba876e19.mesh"]
+
+source_file="res://assets/KayKit_HalloweenBits_1.0_FREE/Assets/obj/arch_gate_left.obj"
+dest_files=["res://.godot/imported/arch_gate_left.obj-9b5a092e496c51f7835603e5ba876e19.mesh", "res://.godot/imported/arch_gate_left.obj-9b5a092e496c51f7835603e5ba876e19.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

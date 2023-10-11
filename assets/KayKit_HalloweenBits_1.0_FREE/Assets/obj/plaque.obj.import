@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cfgu8m3u5u62u"
+path="res://.godot/imported/plaque.obj-60fd8f35d0744cf9e602270293fea41f.mesh"
+
+[deps]
+
+files=["res://.godot/imported/plaque.obj-60fd8f35d0744cf9e602270293fea41f.mesh"]
+
+source_file="res://assets/KayKit_HalloweenBits_1.0_FREE/Assets/obj/plaque.obj"
+dest_files=["res://.godot/imported/plaque.obj-60fd8f35d0744cf9e602270293fea41f.mesh", "res://.godot/imported/plaque.obj-60fd8f35d0744cf9e602270293fea41f.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

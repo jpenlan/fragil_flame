@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://geitjjorng41"]
+
+[ext_resource type="Script" path="res://scripts/skull.gd" id="1_4u3ct"]
+[ext_resource type="PackedScene" uid="uid://6l3k8hafl5pl" path="res://assets/KayKit_HalloweenBits_1.0_FREE/Assets/gltf/skull.gltf" id="1_d4l5d"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_h16sn"]
+radius = 1.0
+
+[node name="skull" type="StaticBody3D"]
+script = ExtResource("1_4u3ct")
+
+[node name="Pivot" type="Node3D" parent="."]
+
+[node name="skull" parent="Pivot" instance=ExtResource("1_d4l5d")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.855353, 0)
+shape = SubResource("CapsuleShape3D_h16sn")

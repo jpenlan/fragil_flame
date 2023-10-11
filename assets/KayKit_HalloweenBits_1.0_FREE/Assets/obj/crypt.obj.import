@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://s0bh802sb23t"
+path="res://.godot/imported/crypt.obj-3de9c8140197555f20001cebfb8d2456.mesh"
+
+[deps]
+
+files=["res://.godot/imported/crypt.obj-3de9c8140197555f20001cebfb8d2456.mesh"]
+
+source_file="res://assets/KayKit_HalloweenBits_1.0_FREE/Assets/obj/crypt.obj"
+dest_files=["res://.godot/imported/crypt.obj-3de9c8140197555f20001cebfb8d2456.mesh", "res://.godot/imported/crypt.obj-3de9c8140197555f20001cebfb8d2456.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
