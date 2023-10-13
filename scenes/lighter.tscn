@@ -1,19 +1,18 @@
 [gd_scene load_steps=3 format=3 uid="uid://cktfurh6l63nr"]
 
-[ext_resource type="PackedScene" uid="uid://cwf8r1je62r1d" path="res://assets/KayKit_HalloweenBits_1.0_FREE/Assets/gltf/candle_thin.gltf" id="1_l7fsn"]
+[ext_resource type="PackedScene" uid="uid://b4ncv33ga7u4e" path="res://assets/KayKit_HalloweenBits_1.0_FREE/Assets/gltf/candle.gltf" id="1_7uk4v"]
 
-[sub_resource type="CylinderShape3D" id="CylinderShape3D_fymfu"]
-height = 1.5
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_j8m2c"]
+height = 0.8
 radius = 0.2
 
-[node name="Lighter" type="StaticBody3D"]
-
-[node name="Pivot" type="Node3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0348473, 0)
-
-[node name="candle" parent="Pivot" instance=ExtResource("1_l7fsn")]
+[node name="CharacterBody3D" type="CharacterBody3D"]
 transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0)
 
+[node name="Pivot" type="Node3D" parent="."]
+
+[node name="candle" parent="Pivot" instance=ExtResource("1_7uk4v")]
+
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.654953, 0)
-shape = SubResource("CylinderShape3D_fymfu")
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.329078, 0)
+shape = SubResource("CylinderShape3D_j8m2c")
